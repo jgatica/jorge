@@ -1,15 +1,16 @@
 package jorge.com.android;
-
 import android.app.Activity;
 import android.os.Bundle;
+import com.phonegap.DroidGap;
+/*
 import android.view.Menu;
 import android.view.MenuItem;
-
-public class MainActivity extends Activity {
+*/
+public class MainActivity extends DroidGap {
 
 	@Override
-	protected void onCreate(Bundle savedInstanceState) {
+	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
+		super.loadUrl("file:///android_asset/www/index.html");
 	}
 }
